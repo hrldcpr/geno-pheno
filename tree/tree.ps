@@ -1,0 +1,29 @@
+% setup
+300 300 translate
+100 100 scale
+0.01 setlinewidth
+
+% body
+/tree {
+    0 0 moveto
+    0 1 lineto
+    stroke
+
+    1 sub
+    dup 0 gt {
+	gsave
+	0 1 translate
+	0.7 0.7 scale
+
+	90 rotate
+	dup tree
+
+	180 rotate
+	dup tree
+
+	grestore
+    } if
+    pop
+} def
+
+13 tree
