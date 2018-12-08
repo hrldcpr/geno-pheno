@@ -1,0 +1,20 @@
+% from https://www.nyx.net/~gthompso/self_post.txt
+
+(/Courier 10 selectfont
+newpath
+0 316 moveto   %Tweak to change the display top-left
+<28> show
+<0a> search pop
+dup show
+stringwidth pop <28> stringwidth pop add neg -12 rmoveto
+pop
+{<0a> search
+ {dup show
+  stringwidth pop
+  neg -12 rmoveto
+  pop}
+ {show
+  ( dup cvx exec) <29> show show
+  exit}
+ ifelse}
+loop) dup cvx exec

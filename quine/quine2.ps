@@ -1,0 +1,22 @@
+% from https://www.nyx.net/~gthompso/self_post.txt
+
+(%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%)
+(% Self-printing PostScript file by Nick Harvey      %)
+(% mailto:njaharve@uwaterloo.ca                      %)
+(% http://www.undergrad.math.uwaterloo.ca/~njaharve/ %)
+(%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%)
+(/str 20 string def /Courier findfont 9 scalefont setfont 10 copy)
+(0 1 9 { 12 mul 600 exch add 72 exch moveto ( () show show ( )) show } for)
+(0 1 9 { 12 mul 480 add 72 exch moveto show } for)
+(/foo (a) stringwidth pop def 44 516 59 516 45 480 46 480)
+(0 1 3 { pop exch foo mul 72 add exch moveto (  ) show } for showpage)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Self-printing PostScript file by Nick Harvey      %
+% mailto:njaharve@uwaterloo.ca                      %
+% http://www.undergrad.math.uwaterloo.ca/~njaharve/ %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+/str 20 string def /Courier findfont 9 scalefont setfont 10 copy
+0 1 9 { 12 mul 600 exch add 72 exch moveto (\() show show (\)) show } for
+0 1 9 { 12 mul 480 add 72 exch moveto show } for
+/foo (a) stringwidth pop def 44 516 59 516 45 480 46 480
+0 1 3 { pop exch foo mul 72 add exch moveto (\\) show } for showpage

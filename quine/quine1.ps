@@ -1,0 +1,23 @@
+% from https://web.archive.org/web/20150305222608/http://chris.pacejo.net:80/postscript/quine.pdf
+
+[
+(])
+(/Courier findfont)
+(10 scalefont)
+(setfont)
+(/nl { 10 sub 2 copy moveto } bind def)
+(/data exch def)
+(newpath 72 720 nl)
+(([) show nl)
+(data { <28> show show <29> show nl } forall)
+(data { show nl } forall)
+]
+/Courier findfont
+10 scalefont
+setfont
+/nl { 10 sub 2 copy moveto } bind def
+/data exch def
+newpath 72 720 nl
+([) show nl
+data { <28> show show <29> show nl } forall
+data { show nl } forall
