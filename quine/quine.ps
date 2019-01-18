@@ -1,0 +1,24 @@
+% setup
+400 720 moveto
+10 10 scale
+/Courier findfont
+1 scalefont
+setfont
+
+% body
+[
+  (dup)
+  (/print { gsave { show } forall grestore 0 -1 rmoveto } def)
+  (-1 1 scale)
+  ([([)] print)
+  ({ /x exch def [(  \() x (\))] print } forall)
+  ([(])] print)
+  ({ /x exch def [x] print } forall)
+]
+dup
+/print { gsave { show } forall grestore 0 -1 rmoveto } def
+-1 1 scale
+[([)] print
+{ /x exch def [(  \() x (\))] print } forall
+[(])] print
+{ /x exch def [x] print } forall
