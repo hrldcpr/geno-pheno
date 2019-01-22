@@ -5,25 +5,25 @@
 
 % body
 /tree {
-    0 0 moveto
-    0 1 lineto
-    stroke
+  0 0 moveto
+  0 1 lineto
+  stroke
 
-    1 sub
-    dup 0 gt {
-	gsave
-	0 1 translate
-	0.7 0.7 scale
+  1 sub
+  dup 0 gt {
+    gsave
+    0 1 translate
+    0.7 0.7 scale
 
-	90 rotate
-	dup tree
+    90 rotate
+    dup tree
 
-	180 rotate
-	dup tree
+    180 rotate
+    dup tree
 
-	grestore
-    } if
-    pop
+    grestore
+  } if
+  pop
 } def
 
 13 tree
