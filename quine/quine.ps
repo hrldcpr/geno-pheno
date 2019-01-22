@@ -7,18 +7,21 @@ setfont
 
 % body
 [
-  (dup)
-  (/print { gsave { show } forall grestore 0 -1 rmoveto } def)
+  (] dup)
   (-1 1 scale)
-  ([([)] print)
-  ({ /x exch def [(  \() x (\))] print } forall)
-  ([(])] print)
-  ({ /x exch def [x] print } forall)
-]
-dup
-/print { gsave { show } forall grestore 0 -1 rmoveto } def
+  (/p {)
+  (  gsave { show } forall grestore)
+  (  0 -1 rmoveto)
+  (} def)
+  ([([)] p)
+  ({ /x exch def [(  \() x (\))] p } forall)
+  ({ /x exch def [x] p } forall)
+] dup
 -1 1 scale
-[([)] print
-{ /x exch def [(  \() x (\))] print } forall
-[(])] print
-{ /x exch def [x] print } forall
+/p {
+  gsave { show } forall grestore
+  0 -1 rmoveto
+} def
+[([)] p
+{ /x exch def [(  \() x (\))] p } forall
+{ /x exch def [x] p } forall
