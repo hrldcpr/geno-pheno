@@ -1,27 +1,32 @@
 % setup
-400 720 moveto
-10 10 scale
-/Courier findfont
-1 scalefont
-setfont
+<< /PageSize [396 396] >> setpagedevice
+288 380 translate
+14 14 scale
+/Didot-Bold findfont 1 scalefont setfont
 
 % body
 [
-  (] dup)
-  (-1 1 scale)
-  (/p {)
-  (  gsave { show } forall grestore)
-  (  0 -1 rmoveto)
-  (} def)
-  ([([)] p)
-  ({ /x exch def [(  \() x (\))] p } forall)
-  ({ /x exch def [x] p } forall)
+    (] dup)
+    ()
+    (/p {)
+    (    gsave { show } forall grestore)
+    (    0 -1 rmoveto)
+    (} def)
+    ()
+    (-1 1 scale)
+    (0 0 moveto)
+    ([([)] p)
+    ({ /x exch def [(  \() x (\))] p } forall)
+    ({ /x exch def [x] p } forall)
 ] dup
--1 1 scale
+
 /p {
   gsave { show } forall grestore
   0 -1 rmoveto
 } def
+
+-1 1 scale
+0 0 moveto
 [([)] p
-{ /x exch def [(  \() x (\))] p } forall
+{ /x exch def [(    \() x (\))] p } forall
 { /x exch def [x] p } forall
