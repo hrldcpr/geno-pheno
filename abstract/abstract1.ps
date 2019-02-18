@@ -1,0 +1,17 @@
+% setup
+200 300 translate
+20 20 scale
+0.1 setlinewidth
+
+% body
+0 2 20 {
+    /i exch def
+    /a i 2 div def
+    /b 10 a sub def
+    a i moveto
+    b i lineto
+    stroke
+    b i 1 add moveto
+    a i 1 add lineto
+    stroke
+} for

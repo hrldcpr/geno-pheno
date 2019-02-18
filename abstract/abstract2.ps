@@ -1,0 +1,14 @@
+% setup
+<< /PageSize [396 396] >> setpagedevice
+198 198 translate
+10 10 scale
+0.2 setlinewidth
+
+% body
+-10 1 10 {
+    /i exch def
+    /j i abs def
+    j i moveto
+    10 j sub 2 sqrt mul 0 rlineto
+    stroke
+} for

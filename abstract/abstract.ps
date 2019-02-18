@@ -1,17 +1,18 @@
 % setup
-200 300 translate
-20 20 scale
+<< /PageSize [396 396] >> setpagedevice
+48 48 translate
+15 15 scale
 0.1 setlinewidth
 
 % body
-0 2 20 {
+0 1 20 {
     /i exch def
-    /a i 2 div def
-    /b 10 a sub def
-    a i moveto
-    b i lineto
+
+    i 0 moveto
+    i 20 lineto
     stroke
-    b i 1 add moveto
-    a i 1 add lineto
+
+    0 i moveto
+    20 i sub i lineto
     stroke
 } for
