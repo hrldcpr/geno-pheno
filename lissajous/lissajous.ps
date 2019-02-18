@@ -1,0 +1,16 @@
+% setup
+<< /PageSize [396 396] >> setpagedevice
+198 198 translate
+198 198 scale
+0.01 setlinewidth
+
+% body
+/pi 3.14159 def
+1 0 moveto
+0 0.1 1000 {
+    /t exch def
+    t 31 mul cos
+    t 41 mul sin
+    lineto
+} for
+stroke
